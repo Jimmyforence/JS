@@ -1,3 +1,4 @@
+/*
 let b = prompt("Ayudame con la tarea, ingresa un número")
 
 
