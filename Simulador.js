@@ -3,17 +3,27 @@
 
 
 
-let btn = document.getElementsByClassName('btn');
-let contador = 0;
+/*let btn = document.getElementsByClassName('btn');*/
 
+let contador=0
 
 
 document.querySelector(".btn").addEventListener("click", carrito, true);
 
+
+
 function carrito(){
-    if ( contador == 0) {
-        contador= contador+1
+    let limite = prompt("ingrese la cantidad de playeras que quieras");
+    while ( contador <= limite) {
+        console.log(`la cantidad en carrito es ${contador}`);
+        contador++;
         console.log(`Producto agregado`)
+    }
+}
+   
+    /*if ( contador == 0) {
+        contador= contador+1
+       
         }
     else
     {
@@ -22,6 +32,4 @@ function carrito(){
     }}
     
     console.log(`la cantidad en carrito es ${contador}`)
-  
-
-
+} */
