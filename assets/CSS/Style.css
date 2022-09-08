@@ -6,6 +6,8 @@
     
 }
 
+
+
 /* .home{  
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -1305,6 +1307,10 @@ text-align:  center;
  /*PC high*/
  @media(min-width:1200px)
 
+body
+{
+
+}
 {
     .home{  
         display: grid;
@@ -1314,6 +1320,8 @@ text-align:  center;
                             "content content content aside"
                             "footer footer footer footer";
     }
+
+
 
  
 /*Blog*/
@@ -1534,6 +1542,8 @@ text-align: center;
         justify-content: space-evenly;
         
 }
+
+
 .productA{
       
 

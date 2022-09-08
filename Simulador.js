@@ -8,11 +8,25 @@ let contador=1
 let contador2=1
 const playera1 = {Sku: 1001, precio: 800, Talla: "Extra Chica" }
 const playera2 = {Sku: 1002,precio: 800,Talla: "Chica" }
-const prodDisp =[playera1,playera2];
+const playera3 = {Sku: 1003, precio: 1100, Talla: "Extra Chica" }
+const playera4 = {Sku: 1004,precio: 1800,Talla: "Chica" }
+const playera5 = {Sku: 1002,precio: 1800,Talla: "Chica" }
+const playera6 = {Sku: 1003, precio: 2000, Talla: "Extra Grande" }
+const playera7 = {Sku: 1004,precio: 1800,Talla: "Chica" }
+
+const prodDisp =[playera1,playera2,playera3,playera4,playera5,playera6, playera7];
 
 document.querySelector(".btn").addEventListener("click", addCarrito, true);
 document.querySelector(".btnB").addEventListener("click", addCarrito2, true);
+document.querySelector(".lupa").addEventListener("click",busca, true);
 
+
+function busca (){
+    let buscad = prompt ("ingrese busqueda por precio")
+    let searchresult =  prodDisp.filter ((producto) => producto.precio > buscad)
+
+    console.log(searchresult)
+}
 
 
 function addCarrito(){
@@ -54,7 +68,12 @@ function addCarrito2(){
 
 const carrito = [];
 const costo = []
-   
+
+
+// let total =0
+// carrito.forEach((item) => (total += item.precio));
+// console.log(total)
+
     /*if ( contador == 0) {
         contador= contador+1
        
