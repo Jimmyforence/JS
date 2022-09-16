@@ -15,12 +15,18 @@ const playera6 = {Sku: 1003, precio: 2000, Talla: "Extra Grande" }
 const playera7 = {Sku: 1004,precio: 1800,Talla: "Chica" }
 
 const prodDisp =[playera1,playera2,playera3,playera4,playera5,playera6, playera7];
-
+ 
 document.querySelector(".btn").addEventListener("click", addCarrito, true);
 document.querySelector(".btnB").addEventListener("click", addCarrito2, true);
 document.querySelector(".lupa").addEventListener("click",busca, true);
+document.querySelector(".erase").addEventListener("click",elimina, true);
 
-
+function elimina(){
+    let goma =0
+    contador = goma
+    contador2 = goma
+    console.log(`${contador}  Producto(s)  agregado al carrito}`)
+}
 function busca (){
     let buscad = prompt ("ingrese busqueda por precio")
     let searchresult =  prodDisp.filter ((producto) => producto.precio > buscad)
